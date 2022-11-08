@@ -1,0 +1,147 @@
+
+/* universal styling */
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  color:slateblue;
+  position:absolute;
+  transform: translateY(-60px);
+  width: fit-content;
+  text-align: center;
+}
+
+img {
+  width: 75 vw;
+  height: 75 vh;
+}
+
+/* body styling */
+body {
+  background-color: gainsboro;
+}
+
+/* header styling  */
+header {
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: slateblue;
+  color: white;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+header nav {
+  margin-right: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display:inline-block;
+  margin-left: 20px;
+}
+
+
+/* main styling */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* main section that holds left and right side  */
+
+.main-side {
+  display: flex;
+  align-items: center;
+}
+
+.left-oriented {
+  width: 40vw;
+  border-right: black solid ;
+}
+
+.right-content {
+  padding: 30px;
+}
+
+/* styling to hold the cards with content in the work section */
+
+.card-container {
+  display:flex;
+  flex-flow: row wrap-reverse;
+  flex-wrap: wrap;
+}
+
+.card-column {
+  flex: 1 0 50%;
+  padding: 1.5rem;
+}
+
+.image {
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid slateblue;
+}
+
+/* footer styling */
+
+footer {
+  display:flex;
+  justify-content: space-between;
+}
+
+footer section p {
+  font-size: 20px;
+}
+
+footer ul li {
+  display:inline-block;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+footer {
+    padding: 50px;
+    background-color: slateblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
