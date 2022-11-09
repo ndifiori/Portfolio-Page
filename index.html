@@ -25,131 +25,141 @@
     <!-- creates the header with the navbar -->
     <header>
         <!-- creates name or a logo -->
-        <h1> Difiori </h1>
+        <div class="main-header">
+          <h1> Difiori </h1>
+        </div>
+        
         <!-- creates nav bar -->
-        <nav>
-          <!-- create unorderlist to put at the top for later sections -->
+        <nav class="navbar">
+          <!-- create unordered list to put at the top for later sections -->
           <ul>
             <li> 
-              <a href="#"> About Me </a>
+              <a href="#about-me"> About Me </a>
             </li>
             <li> 
-              <a href="#"> Work </a>
+              <a href="#work"> Work </a>
             </li>
             <li> 
-              <a href="#"> Contact Me </a> 
+              <a href="#contact-me"> Contact Me </a> 
             </li>
           </ul>
         </nav>
     </header>
 
     <!-- create main section of the website -->
-    <main>
-
-      <!-- creating about me section w/ 2 subsections -->
-      <section class="main-side">
-
-        <!-- this section is for the left side about me -->
-        <section class="left-oriented">
-          <h2> About Me </h2>
-        </section>
-
-        <!-- this section is for the right side details -->
-        <section class="right-content">
-          <p>
-            My name is Nathan Difiori.
-          </p>
-          <br>
-          <p>
-            I graduated UC Davis with a B.S. in Neuroscience.
-          </p>
-          <br>
-          <p>
-            This coding bootcamp is the start of my software engineering journey.
-          </p>
-        </section>
-
-      </section>
-
-      <!-- creating another section w/ 2 subsections for working projects and portfolios -->
-      <section class="main-side">
-
-        <!-- this section is for the left side work heading -->
-        <section class="left-oriented"> 
-          <h2> Work </h2>
-        </section>
-
-        <!-- this section is for the right side with projects -->
-        <section class="right-content" >
+    <main class="row">
+        <!-- creating about me section w/ 2 subsections -->
+        <section class="main-side-1" id="about-me">
+      
           
-          <!-- this section will contain the project cards -->
-          <section class="card-container">
-            <div class="card-column">
-              <a target="_blank" href="https://github.com/ndifiori/Code-Refactor"> 
-                <img src="./images/1.png" class="image" >
-                <h3> Project 1 </h3>
-              </a>
-            </div>
+            <!-- this section is for the left side about me -->
+            <section class="left-oriented-1">
+              <div class="center">
+                <h2> About Me </h2>
+              </div>
+            
+            </section>
+            
+            <!-- this section is for the right side details -->
+            <section class="right-content-1">
+              <p>
+                My name is Nathan Difiori.
+              </p>
+              <br>
+              <p>
+                I graduated UC Davis with a B.S. in Neuroscience.
+              </p>
+              <br>
+              <p>
+                This coding bootcamp is the start of my software engineering journey.
+              </p>
+            </section>
+          </section>
+         
+      <!-- creating another section w/ 2 subsections for working projects and portfolios -->
+      <section class="main-side-2" id="work">
+      
+        <!-- this section is for the left side work heading -->
+        <section class="left-oriented-2">
+          <div class="center">
+            <h2> Work </h2>
+          </div>
+        </section>
+      
+        <!-- this section is for the right side with projects -->
+        <section>
+      
+          <section class="card-container-1">
 
-            <div class="card-column">
-              <a target="_blank" href="https://github.com/ndifiori/Portfolio-Page">
-                <img src="./images/2.png" class="image">
-                <h3>Project 2 </h3>
-              </a>
-            </div>
-
-            <div class="card-column">
-              <a target="_blank" href="#">
-                <img src="./images/3.png" class="image">
-                <h3>Project 3 </h3>
-              </a>
-            </div>
-
-            <div class="card-column">
-              <a target="_blank" href="#">
-                <img src="./images/4.png" class="image">
-                <h3>Project 4 </h3>
-              </a>
-            </div>
-
-            <div class="card-column">
-              <a target="_blank" href="#">
-                <img src="./images/5.png" class="image">
-                <h3>Project 5 </h3>
+            <div class="card-column-1">
+              <a target="_blank" href="https://github.com/ndifiori/Code-Refactor">
+                <img src="./images/1.png" class="image">
+                <h3 class="project-title"> Project 1 </h3>
               </a>
             </div>
 
           </section>
-          
-        </section>
-
-
+      
+          <!-- this section will contain the project cards -->
+          <section class="card-container">
+      
+            <div class="card-column">
+              <a target="_blank" href="https://github.com/ndifiori/Portfolio-Page">
+                <img src="./images/2.png" class="image">
+                <h3 class="project-title">Project 2 </h3>
+              </a>
+            </div>
+      
+            <div class="card-column">
+              <a target="_blank" href="#">
+                <img src="./images/3.png" class="image">
+                <h3 class="project-title">Project 3 </h3>
+              </a>
+            </div>
+      
+            <div class="card-column">
+              <a target="_blank" href="#">
+                <img src="./images/4.png" class="image">
+                <h3 class="project-title">Project 4 </h3>
+              </a>
+            </div>
+      
+            <div class="card-column">
+              <a target="_blank" href="#">
+                <img src="./images/5.png" class="image">
+                <h3 class="project-title"> Project 5 </h3>
+              </a>
+            </div>
+      
+          </section>
 
         </section>
         
-        
+      </section>
 
     </main>
 
+    <!-- footer section to hold the contact section -->
+    <footer>
+      <!-- this creates the section to split the footer in 2 (might be able to get rid of) -->
+      <section class="footer-header">
+        <p> Contact Me </p>
+      </section>
+      <!-- creates the section to allow for lists -->
+      <section id="contact-me">
+        <ul class="footer-list">
+          <li> 626-244-5152 </li>
+          <li> ndifiori@gmail.com </li>
+          <li>
+            <a href="https://github.com/ndifiori?tab=repositories" target="_blank"> Github </a> 
+          </li>
+        </ul>
+      </section>
+    </footer>
 
-<!-- footer section to hold the contact section -->
-<footer>
-  <!-- this creates the section to split the footer in 2 (might be able to get rid of) -->
-  <section>
-      <p> Contact Me </p>
-  </section>
-  <!-- creates the section to allow for lists -->
-  <section>
-      <ul>
-        <li> 626-244-5152 </li>
-        <li> ndifiori@gmail.com </li>
-        <li> Github </li>
-      </ul>
-  </sectiion>
+  </body>
 
-</footer>
-
-
+</html>
 
 
       
